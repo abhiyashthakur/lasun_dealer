@@ -1,23 +1,31 @@
-<html>
-  <head>
-    <title>
-      <scripts>
-        <script>
-  window.watsonAssistantChatOptions = {
-    integrationID: "2196625c-f61d-4837-8d7a-1782c3f6f583", // The ID of this integration.
-    region: "jp-tok", // The region your integration is hosted in.
-    serviceInstanceID: "e97440be-fb9f-4316-8579-a78bd457f29a", // The ID of your service instance.
-    onLoad: async (instance) => { await instance.render(); }
-  };
-  setTimeout(function(){
-    const t=document.createElement('script');
-    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-  });
-</script>
-      </scripts>
-    </title>
+<!DOCTYPE html>
+Options = {<html lang="en">
+        integrationID: "2196625c-f61d-4837-8d7a-1782c3f6f583", // Integration ID
+        region: "jp-tok", // Region
+        serviceInstanceID: "e97440be-fb9f-4316-8579-a78bd457f29a", // Service instance ID
+        onLoad: async (instance) => {
+          await instance.render();
+        }
+      };
+
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+          (window.watsonAssistantChatOptions.clientVersion || "latest") +
+          "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      }, 0);
+    </script>
   </head>
+
+  <body>
+    <!-- Page content goes here -->
+  </body>
 </html>
+``
+  <head>
+    <meta charset="UTF-8">
+    <title>Watson Assistant</title>
 
-
+    <script>
