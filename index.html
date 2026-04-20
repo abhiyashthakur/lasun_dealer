@@ -1,14 +1,38 @@
-<!DOCTYPE html>
-Options = {<html lang="en">
-        integrationID: "2196625c-f61d-4837-8d7a-1782c3f6f583", // Integration ID
-        region: "jp-tok", // Region
-        serviceInstanceID: "e97440be-fb9f-4316-8579-a78bd457f29a", // Service instance ID
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lasun Dealer</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f6f8fb;
+        color: #172b4d;
+      }
+      main {
+        max-width: 720px;
+        margin: 64px auto;
+        padding: 0 20px;
+      }
+      h1 {
+        margin-bottom: 12px;
+      }
+      p {
+        line-height: 1.5;
+      }
+    </style>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "2196625c-f61d-4837-8d7a-1782c3f6f583",
+        region: "jp-tok",
+        serviceInstanceID: "e97440be-fb9f-4316-8579-a78bd457f29a",
         onLoad: async (instance) => {
           await instance.render();
         }
       };
-
-      setTimeout(function () {
+      setTimeout(() => {
         const t = document.createElement("script");
         t.src =
           "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
@@ -18,14 +42,10 @@ Options = {<html lang="en">
       }, 0);
     </script>
   </head>
-
   <body>
-    <!-- Page content goes here -->
+    <main>
+      <h1>Lasun Dealer</h1>
+      <p>Welcome to the Lasun Dealer website. The assistant chat widget should load in the corner.</p>
+    </main>
   </body>
 </html>
-``
-  <head>
-    <meta charset="UTF-8">
-    <title>Watson Assistant</title>
-
-    <script>
